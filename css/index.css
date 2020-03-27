@@ -1,0 +1,77 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.container{
+	width:1200px;
+	margin: 0 auto;
+}
+#head{
+	padding: 8px;
+	border:1px solid #990;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#logo{
+	float: left;
+	width: 210px;
+    padding: 5px 20px 0px 10px;
+}
+#logo img{
+	width: 40px;
+	height: 40px;
+}
+#search{
+	float: left;
+	width:646px;
+	border: 1px solid #999;
+    border-radius: 10px;
+    background: #999;
+}
+.icon,.icon1,.ip{
+	float: left;
+}
+#name{
+	font-size: 20px;
+    position: absolute;
+    top: 24px;
+    left: 120px;
+}
+#user,#support{
+	float: right;
+	padding-top: 6px;
+}
+#user img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+#support{
+	width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 32px;
+    margin-right: 82px;
+}
+.ip input{
+	width: 550px;
+	height: 50px;
+	background:#999;
+	border:none;
+	outline: none;
+
+}
+.icon,.icon1
+{
+    display: inline-block;
+    width: 36px;
+    height: 40px;
+    text-align: center;
+    line-height: 31px;
+    font-size: 21px;
+    padding: 5px;
+    margin: 5px;
+}
