@@ -2,8 +2,6 @@
 <html>
 <head>
 	<title>Mymail-application</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -24,31 +22,30 @@
 				</a>
 			</div>
 		</div>
-		<div id="search" class="clearfix">
-			<button class="search"><i class="fa fa-search" aria-hidden="true"></i></button>
-			<form id="form" class="clearfix">
-					<input type="text" name="seach" placeholder="Search mail" id="ip">
-				<button class="search1 ser"><i class="fa fa-times" style="display: none;"></i></button>
-			</form>
-			<button class="search3"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+		<div id="search-main" class="clearfix">
+			<div id="search" class="clearfix">
+				<div id="form1" class="clearfix">
+					<form class="clearfix" id="form">
+						<button class="search_btn"><span class="span"><i class="fa fa-search"></i></span></button>
+						<div id="ip">
+							<input type="text" name="search" placeholder="Search mail" class="input" id="input">
+						</div>
+						<button class="search1_btn"><span class="span1" >
+							<i class="fa fa-times" style="display: none;" ></i>
+						</span></button>
+						<button class="search_btn "><span class="span down"><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
+					</form>
+				</div>
+			</div>
+			<div id="support">
+				<a href="#"><span class="span sp2"><i class="fa fa-lg fa-question-circle-o"></i></span></a>
+			</div>
 		</div>
-		<div id="support">
-			<button class="search support" title="support"><i class="fa  fa-question-circle-o"></i></button>
-		</div>
-		<div id="app">
-			<button class="search"><img src="imeage/images.png" id="menu"></button>
-		</div>
-		<div class="user">
-			<a href="#"><img src="imeage/avatR.png" id="user"></a>
-		</div>
-	</div>
-	<div id="side" class="clearfix">
-		<div id="compose" class="clearfix">
-				<div id="com1"></div>
-				<div id="com2"><a href="#">Compose</a></div>
-		</div>
-		<div id="list">
-			<div id="u_list"></div>
+		<div id="more-app">
+			<a href="#">
+				<span class="span2">
+				</span>
+			</a>
 		</div>
 	</div>
 </body>
