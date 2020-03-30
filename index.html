@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Mymail-application</title>
+	<script type="text/javascript" src="javascript/index.js"></script>
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -11,8 +12,6 @@
 		<div id="left" class="clearfix">
 			<div id="left-side">
 				<button id="btn">
-					<span class="humburger"></span>
-					<span class="humburger"></span>
 					<span class="humburger"></span>
 				</button>
 			</div>
@@ -26,19 +25,19 @@
 			<div id="search" class="clearfix">
 				<div id="form1" class="clearfix">
 					<form class="clearfix" id="form">
-						<button class="search_btn"><span class="span"><i class="fa fa-search"></i></span></button>
+						<button class="search_btn" ><span class="span"  id="searchicon"><i class="fa fa-search"></i></span></button>
 						<div id="ip">
 							<input type="text" name="search" placeholder="Search mail" class="input" id="input">
 						</div>
-						<button class="search1_btn"><span class="span1" >
+						<button  class="search1_btn"><span class="span1"  id="cross">
 							<i class="fa fa-times" style="display: none;" ></i>
 						</span></button>
-						<button class="search_btn "><span class="span down"><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
+						<button  class="search_btn "><span class="span down" id="downaerrow"><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
 					</form>
 				</div>
 			</div>
 			<div id="support">
-				<a href="#"><span class="span sp2"><i class="fa fa-lg fa-question-circle-o"></i></span></a>
+				<a href="#"><span class="span sp2" id="supporticon"><i class="fa fa-lg fa-question-circle-o"></i></span></a>
 			</div>
 		</div>
 		<div id="more-app">
@@ -48,6 +47,6 @@
 			</a>
 		</div>
 	</div>
+	
 </body>
-<script type="text/javascript" src="javascript/index.js"></script>
 </html>

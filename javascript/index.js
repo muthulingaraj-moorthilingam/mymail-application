@@ -43,11 +43,23 @@ document.getElementById("left-side").addEventListener("click",function(event){
 	list.style.display="none";
 });
 */
-document.getElementById("form").addEventListener("click",function(event){
-	document.getElementById("form").style.backgroundColor="#fff";
-	document.getElementById("input").style.backgroundColor="#fff";
-	document.getElementById("form").style.boxShadow="0px 1px 2.3px 0px rgba(104,106,112,1),1px 0px 2px 0px rgba(104,106,112,0)";
-
+/*document.getElementById("header").addEventListener("click",function(event){
+		console.log(event.target.id);
+		console.log(event.target);
+		if (event.target.id === "input"){
+			document.getElementById("form").style.backgroundColor="#fff";
+			document.getElementById("input").style.backgroundColor="#fff";
+			document.getElementById("form").style.boxShadow="0px 1px 2.3px 0px rgba(104,106,112,1),1px 0px 2px 0px rgba(104,106,112,0)";
+		}
 });
-
+document.getElementById("input").addEventListener("keypress",function(event){
+				if(event.code === "Enter"){
+						alert("u find it");
+				}
+});
 //box-shadow: 0px 1px 2.3px 0px rgba(104,106,112,1),1px 0px 2px 0px rgba(104,106,112,0)";
+*/
+window.onload=function(){
+	//document.getElementById("header").style.width=window.innerWidth;
+	console.log(window.innerWidth)
+}
