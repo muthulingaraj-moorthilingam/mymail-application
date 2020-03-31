@@ -1,4 +1,5 @@
-/*var value="";
+window.onload=function(){
+//var value="";
 
 fetch("https://api.myjson.com/bins/uw598")
 .then(function(resolve){
@@ -6,11 +7,11 @@ fetch("https://api.myjson.com/bins/uw598")
 })
 .then(function(data){
 	console.log(data);
-	document.getElementById('user').src=data.photo;
+	document.getElementById('ud').src=data.photo;
 	value=data;
 	console.log(value);
 });
-
+/*
 fetch("https://api.myjson.com/bins/11ut94")
 .then(function(value){
 	return value.json();
@@ -33,7 +34,6 @@ fetch("https://api.myjson.com/bins/11ut94")
 	}
 
 });
-
 document.getElementById("left-side").addEventListener("click",function(event){
 	console.log(event);
 	var com1=document.getElementById("com1");
@@ -43,7 +43,9 @@ document.getElementById("left-side").addEventListener("click",function(event){
 	list.style.display="none";
 });
 */
-/*document.getElementById("header").addEventListener("click",function(event){
+
+document.getElementById("header").addEventListener("click",find);
+function find(event){
 		console.log(event.target.id);
 		console.log(event.target);
 		if (event.target.id === "input"){
@@ -51,7 +53,11 @@ document.getElementById("left-side").addEventListener("click",function(event){
 			document.getElementById("input").style.backgroundColor="#fff";
 			document.getElementById("form").style.boxShadow="0px 1px 2.3px 0px rgba(104,106,112,1),1px 0px 2px 0px rgba(104,106,112,0)";
 		}
-});
+		if(event.target.id ==="downaerrow"){
+			document.getElementById("show-search-option").style.display="block";
+		}
+}
+/*
 document.getElementById("input").addEventListener("keypress",function(event){
 				if(event.code === "Enter"){
 						alert("u find it");
@@ -59,7 +65,7 @@ document.getElementById("input").addEventListener("keypress",function(event){
 });
 //box-shadow: 0px 1px 2.3px 0px rgba(104,106,112,1),1px 0px 2px 0px rgba(104,106,112,0)";
 */
-window.onload=function(){
+
 	//document.getElementById("header").style.width=window.innerWidth;
 	console.log(window.innerWidth)
 }

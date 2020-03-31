@@ -20,8 +20,8 @@
 					<img class="gb_ua" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x.png" srcset="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x.png 1x, https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x.png 2x " alt="" aria-hidden="true" style="width:109px;height:40px;padding-top: 4px">
 				</a>
 			</div>
-		</div>
-		<div id="search-main" class="clearfix">
+	</div>
+	<div id="search-main" class="clearfix">
 			<div id="search" class="clearfix">
 				<div id="form1" class="clearfix">
 					<form class="clearfix" id="form">
@@ -36,17 +36,92 @@
 					</form>
 				</div>
 			</div>
-			<div id="support">
-				<a href="#"><span class="span sp2" id="supporticon"><i class="fa fa-lg fa-question-circle-o"></i></span></a>
-			</div>
 		</div>
-		<div id="more-app">
-			<a href="#">
-				<span class="span2">
-				</span>
+	<div id="user-right" class="clearfix">
+		<div id="support">
+			<a href="#"><span class="span sp2" id="supporticon"><i class="fa fa-lg fa-question-circle-o"></i></span></a>
+		</div>
+		<div id="more-app" class="clearfix">
+			<a href="#" class="more clearfix">
+				<span class="s1"></span>
+				<span class="s2"></span>
+				<span class="s3"></span>
+			</a>
+			<a href="#" class="user">
+				<img src="imeage/avatR.png" style="width: 32px;height: 32px;" id="ud">
 			</a>
 		</div>
 	</div>
-	
+</div>
+<div id="show-search-option" style="display: none;">
+	<div id="search-content">
+		<div class="sso">
+			<span class="span-sso">
+				<label>Form</label>
+			</span>
+			<input type="text" name="text" class="input-sso">
+		</div>
+		<div class="sso">
+			<span class="span-sso">
+				<label>To</label>
+			</span>
+			<input type="text" name="text" class="input-sso">
+		</div>
+		<div class="sso">
+			<span class="span-sso">
+				<label>Subject</label>
+			</span>
+			<input type="text" name="text" class="input-sso">
+		</div>
+		<div class="sso">
+			<span class="span-sso">
+				<label>Has the words</label>
+			</span>
+			<input type="text" name="text" class="input-sso">
+		</div>
+		<div class="sso">
+			<span class="span-sso">
+				<label>Doesn't have</label>
+			</span>
+			<input type="text" name="text" class="input-sso">
+		</div>
+		<div class="sso-select">
+			<span class="span-sso">
+				<label>Size</label>
+			</span>
+			<div class="select">
+				<select class="selects">
+					<option class="op">greater then</option>
+					<option class="op">less than</option>
+				</select>
+				<input type="text" name="empty" class="select-input">
+				<select class="selects-byte">
+					<option class="op">MB</option>
+					<option class="op">KB</option>
+					<option class="op">Bytes</option>
+				</select>
+			</div>
+		</div>
+		<div class="sso-select">
+			<span class="span-sso">
+				<label>Date within</label>
+			</span>
+			<div class="select">
+				<select class="selects">
+					<option class="op">1 day</option>
+					<option class="op">3 days</option>
+					<option class="op">1 week</option>
+					<option class="op">2 weeks</option>
+					<option class="op">1 month</option>
+					<option class="op">2 months</option>
+					<option class="op">6 months</option>
+					<option class="op">1 year</option>
+				</select>
+				<input type="text" name="date" class="date-ip">
+				<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 </html>
