@@ -8,12 +8,13 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-	<div id="header" class="clearfix">
+	<div id="page">
+		<div id="header" class="clearfix">
 		<div id="left" class="clearfix">
 			<div id="left-side">
-				<button id="btn">
-					<span class="humburger"></span>
-				</button>
+				
+					<span class="humburger" id="tongle"></span>
+			
 			</div>
 			<div id="logo">
 				<a href="index.html">
@@ -25,7 +26,7 @@
 			<div id="search" class="clearfix">
 				<div id="form1" class="clearfix">
 					<form class="clearfix" id="form">
-						<button class="search_btn" ><span class="span"  id="searchicon"><i class="fa fa-search"></i></span></button>
+						<a href="#"class="search_btn" ><span class="span"  id="searchicon"><i class="fa fa-search"></i></span></a>
 						<div id="ip">
 							<input type="text" name="search" placeholder="Search mail" class="input" id="input">
 						</div>
@@ -52,8 +53,7 @@
 			</a>
 		</div>
 	</div>
-</div>
-<div id="show-search-option" style="display: none;">
+	<div id="show-search-option" style="display: none;">
 	<div id="search-content">
 		<div class="sso">
 			<span class="span-sso">
@@ -123,5 +123,142 @@
 		</div>
 	</div>
 </div>
+</div>
+	
+	<div id="second-half" class="clearfix">
+		<div id="left-path">
+			<div id="left-mebu-bar">
+				<div class="compose-box">
+					<a href="#" class="compose">
+						<span class="compose-text">Compose</span>
+					</a>
+				</div>
+			</div>
+			<div id="mail-menu">
+				<div class="menu">
+					<a href="#" class="img">
+						<img src="https://www.gstatic.com/images/icons/material/system/1x/inbox_gm_googlered600_20dp.png" >
+					</a>
+					<div class="con">
+						<span class="name">Inbox</span>
+							<span class="count">0</span>
+							<span class="drop">
+								<i class="fa fa-caret-down" aria-hidden="true"></i>
+							</span>
+					</div>
+				</div>
+				<div class="menu">
+					<a href="#" class="img">
+						<img src="https://www.gstatic.com/images/icons/material/system/1x/grade_black_20dp.png" class="im">
+					</a>
+					<div class="con">
+						<span class="name">Starred</span>
+					</div>
+				</div>
+				<div class="menu">
+					<a href="#" class="img">
+						<img src="https://www.gstatic.com/images/icons/material/system/1x/watch_later_black_20dp.png" class="im">
+					</a>
+					<div class="con">
+						<span class="name">Sent</span>
+					</div>
+				</div>
+				<div class="menu">
+					<a href="#" class="img">
+						<img src="https://www.gstatic.com/images/icons/material/system/1x/insert_drive_file_black_20dp.png" class="im">
+					</a>
+					<div class="con" class="clearfix">
+						<span class="name">Drafts</span>
+							<span class="count1">0</span>
+					</div>
+				</div>
+				<div class="menu" id="moremenu">
+					<a href="#" class="img">
+						<img src="https://www.gstatic.com/images/icons/material/system/1x/expand_more_black_20dp.png" class="im">
+					</a>
+					
+					<div class="con">
+						<span class="name">More</span>
+					</div>
+				</div>
+				<div class="menu" style="display: none" id="lessbtn">
+					<a href="#" class="img">
+						<img src="https://www.gstatic.com/images/icons/material/system/1x/expand_less_black_20dp.png">
+					</a>
+					<div class="con">
+						<span class="name" style="">Less</span>
+					</div>
+				</div>
+				<div id="less" style="display: none;">
+					<div class="menu">
+						<a href="#" class="img">
+							<img src="https://www.gstatic.com/images/icons/material/	system/1x/label_important_black_20dp.png" class="im">
+						</a>
+					
+						<div class="con">
+							<span class="name">Important</span>
+						</div>
+					</div>
+					<div class="menu">
+						<a href="#" class="img">
+							<img src="https://www.gstatic.com/images/icons/material/system/1x/hangout_black_20dp.png" class="im">
+						</a>
+					
+						<div class="con">
+							<span class="name">Chats</span>
+						</div>
+					</div>
+					<div class="menu">
+						<a href="#" class="img">
+							<img src="https://www.gstatic.com/images/icons/material/system/1x/schedule_send_black_20dp.png" class="im">
+						</a>
+					
+						<div class="con">
+							<span class="name">Scheduled</span>
+						</div>
+					</div>
+					<div class="menu">
+						<a href="#" class="img">
+							<img src="https://www.gstatic.com/images/icons/material/system/1x/mail_black_20dp.png" class="im">
+						</a>
+					
+						<div class="con">
+							<span class="name">All Mail</span>
+						</div>
+					</div>
+					<div class="menu">
+						<a href="#" class="img">
+							<img src="https://www.gstatic.com/images/icons/material/system/1x/report_black_20dp.png" class="im">
+						</a>
+					
+						<div class="con">
+							<span class="name"><b style="color:#000">Spam</b></span>
+							<span class="count1">0</span>
+						</div>
+					</div>
+					<div class="menu">
+						<a href="#" class="img">
+							<img src="https://www.gstatic.com/images/icons/material/system/1x/delete_black_20dp.png" class="im">
+						</a>
+					
+						<div class="con">
+							<span class="name">Trash</span>
+						</div>
+					</div>
+					<div class="menu me">
+						<span class="mes"><i class="fa fa-caret-down" aria-hidden="true" style="opacity: 0.5"></i></span>
+						<a href="#" class="img">
+							<i class="fa fa-tag" aria-hidden="true"></i>
+						</a>
+					
+						<div class="con">
+							<span class="name">Catagories</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
 </body>
 </html>

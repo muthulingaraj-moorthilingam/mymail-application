@@ -44,28 +44,33 @@ document.getElementById("left-side").addEventListener("click",function(event){
 });
 */
 
-document.getElementById("header").addEventListener("click",find);
+document.getElementById("page").addEventListener("click",find);
 function find(event){
 		console.log(event.target.id);
-		console.log(event.target);
+		//console.log(event.target);
+		//console.log(event.target.class);
 		if (event.target.id === "input"){
 			document.getElementById("form").style.backgroundColor="#fff";
 			document.getElementById("input").style.backgroundColor="#fff";
 			document.getElementById("form").style.boxShadow="0px 1px 2.3px 0px rgba(104,106,112,1),1px 0px 2px 0px rgba(104,106,112,0)";
 		}
-		if(event.target.id ==="downaerrow"){
+		else if(event.target.id ==="downaerrow"){
 			document.getElementById("show-search-option").style.display="block";
 		}
+		else if((event.target.id === "tongle") || (event.target.id === "left-side")){
+			document.getElementById("mail-menu").style.display="none";
+			document.getElementById("mail-menu").children[0];
+		}
+		else if(event.target.id === "moremenu"){
+				document.getElementById("moremenu").style.display="none";
+				document.getElementById("lessbtn").style.display="flex";
+				document.getElementById("less").style.display="block";
+		}
+		else if(event.target.id === "lessbtn"){
+				document.getElementById("moremenu").style.display="flex";
+				document.getElementById("lessbtn").style.display="none";
+				document.getElementById("less").style.display="none";
+		}
 }
-/*
-document.getElementById("input").addEventListener("keypress",function(event){
-				if(event.code === "Enter"){
-						alert("u find it");
-				}
-});
-//box-shadow: 0px 1px 2.3px 0px rgba(104,106,112,1),1px 0px 2px 0px rgba(104,106,112,0)";
-*/
 
-	//document.getElementById("header").style.width=window.innerWidth;
-	console.log(window.innerWidth)
 }
