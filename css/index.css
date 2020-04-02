@@ -4,7 +4,7 @@
 			font-family: 'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 		}
 		#header{
-			padding:8px;
+			padding: 7px 8px;
 			border-top: 1px solid #ECEEF1;
 			border-bottom: 1px solid #ECEEF1;
 			display: block;
@@ -15,15 +15,13 @@
 			display: block;
 			clear: both;
 		}
-		#logo,#left-side,#left,#search,#support,#search-main{
+		#logo,#left-side,#left,#search,#form,#support,#search-main,#more-app{
 			float: left;
 		}
-		#user-right,#more-app,#user{
+		#user-right,#user{
 			float: right;
 		}
-		#left{
-			min-width:238px;
-		}
+		
 		#left-side{
 			width: 24px;
 			height: 24px;
@@ -58,61 +56,39 @@
 			top: 2px;
 			left: -3px;
 		}
-		#btn{
-			background-color: transparent;
-			padding-top: 3px;
-			cursor: pointer;
-			display: inline-block;
-		}
-		#search{
-			padding: 0px 0px 0px 10px;
-		}
-		.span{
-			display: inline-block;
-		    border: none;
-		    background: none;
-		    font-size: 18px;
-		    color: #5F6368;
-		    width: 24px;
-		    margin: 3px;
-		    padding: 8px;
-		    line-height: 24px;
-		    text-align: center;
-		    outline: none;
+		#search-main{
+			padding-left: 59px;
 		}
 		.search_btn{
-			display: inline-block;
-		    border: none;
-		    background: none;	
-		    padding: 0px 5px;
-		    float: left;
-		    outline: none;
+			opacity: 0.5;
+    		display: inline-block;
+   			border: none;
+    		background: none;
+    		float: left;
+    		outline: none;
+    		width: 30px;
+    		height: 30px;
+    		text-align: center;
+    		font-size: 18px;
+    		line-height: 31px;
+    		color: #000;
+    		cursor: pointer;
+    		padding:4px;
+    		cursor: pointer;
+    		margin: 4px;
 		}
 		.search1_btn{
 			display: inline-block;
-		    border: none;
-		    background: none;	
-		    float: left;
-		    padding-top: 8px;
-		    outline: none;
-		}
-		#searchicon{
-			cursor: pointer;
-		}
-		#downaerrow{
-			cursor: pointer;
-		}
-		.span1{
-			display: inline-block;
-		    border: none;
-		    background: none;
-		    font-size: 18px;
-		    color: #5F6368;
-		    width: 24px;
-		    margin: 3px;
-		    line-height: 24px;
-		    text-align: center;
-		    outline: none;
+    		border: none;
+    		position: relative;
+    		background: none;
+    		float: left;
+    		padding-top: 10px;
+    		outline: none;
+    		font-size: 20px;
+    		width: 14px;
+    		color: #000;
+    		opacity: 0.5;
 		}
 		.down{
 			font-size: 14px;
@@ -123,12 +99,17 @@
 			padding: 14px 0px;
 			width: 579px;
 		}
-		#form{
+		#search1{
+			width: 614px;
 			border:1px solid;
 			background: #F1F3F4;
 		    border-color: transparent;
 		    border-radius: 7px;
-
+		    position: relative;
+		}
+		#form{
+			width: 508px;
+			padding:14px 0px 14px 0px;
 		}
 		.input{
 			width: 100%;
@@ -140,26 +121,19 @@
 		.fa-search{
 			transform: rotate(2deg);
 		}
-		.s{
-			width: 2px;
-		    height: 2px;
-		    background: #000;
-		    border: 1px solid;
-		    display: inline-block;
-		    border-radius: 50%;
+		.support{
+    		width: 32px;
+    		height: 32px;
+    		text-align: center;
+    		line-height: 35px;
+    		font-size: 25px;
+    		color: #000;
+    		opacity: 0.4;
+    		display: block;
+    		float: left;
+    		padding:4px;
 		}
-		.span2{
-			display: inline-block;
-		    border: none;
-		    background: none;
-		    font-size: 18px;
-		    color: #5F6368;
-		    width: 24px;
-		    margin: 3px;
-		    padding: 8px;
-		    line-height: 24px;
-		    text-align: center;
-		}
+		
 		.span2 div{
 			height: 7px;
 		}
@@ -168,43 +142,70 @@
 			background-color: #F1F3F4;
 
 		}
-		.span:hover{
+		.search_btn:hover{
 			border-radius: 50%;
 			background-color: #c6cacc;
 		}
-		.sp2:hover{
+		#more-app:hover{
 			border-radius: 50%;
 			background-color: #ebeced;
 		}
+		.support:hover{
+			border-radius: 50%;
+			background-color: #ebeced;
+		}
+		#support{
+			margin-top: 5px;
+		}
+		.op:hover{
+			background-color: #F1F3F4;
+
+		}
 		.user{
-			display: inline-block;
-			margin-top: 7px;
-	    	margin-right: 10px;
+			display: block;
+			float: left;
+   			width: 32px;
+    		height: 32px;
+    		text-align: center;
+    		padding: 4px;
+    		margin-top: 4px;
+    		cursor: pointer;
+		}
+		#more-app{
+			margin-top: 3px;
+			position: relative;
+    		float: left;
+    		width: 36px;
+    		height: 36px;
+    		text-align: center;
+    		padding:4px;
 		}
 		.more{
-			display: inline-block;
+			display: block;
 			width: 24px;
 			height: 24px;
 			text-align: center;
 			text-decoration: none;
 			float: left;
-			margin: 10px;
-			padding: 4px;
+			margin-top: 10px;
+			margin-left: 9px;
+			position: relative;
 		}
 		.s1,.s2,.s3{
-			width: 3px;
-			height: 2.5px;
+			width: 2px;
+			height: 2px;
 			display: inline-block;
 			background-color: #000;
 			float: left;
 			margin: 1px;
 			border-radius: 50%;
 			border: 1px solid transparent;
+			opacity: 0.5;
 		}
 		.s1::before,.s2::before,.s3::before,.s1::after,.s2::after,.s3::after{
 			content: "";
-			width: 3px;
-			height: 3px;
+			width: 2px;
+			height: 2px;
 			display: inline-block;
 			background-color: #000;
 			position: absolute;
@@ -213,28 +214,28 @@
 			border:1px solid transparent;
 		}
 		.s1::before{
-			top: 29px;
-			right: 81px;
+			top: 6px;
+			right: 6px;
 		}
 		.s2::before{
-			top: 29px;
-			right: 74px;
+			top: 6px;
+			right: 18px;
 		}
 		.s3::before{
-			top: 29px;
-			right: 67px;
+			top: 12px;
+			right: 12px;
 		}
 		.s1::after{
-			top: 36px;
-			right: 81px;
+			top: 6px;
+			right: 12px;
 		}
 		.s2::after{
-			top: 36px;
-			right: 74px;
+			top: 12px;
+			right: 6px;
 		}
 		.s3::after{
-			top: 36px;
-			right: 67px;
+			top: 12px;
+			right: 18px;
 		}
 		#ud{
 			border-radius: 50%;
@@ -248,12 +249,12 @@
 			display: flex;
 			flex-direction: row;
 			border:1px solid transparent;
-			width: 720px;
+			width: 612px;
 			height: 440px;
 			box-shadow: 0px 1px 2.3px 0px rgba(104,106,112,1),1px 0px 2px 0px rgba(104,106,112,0);
 			position: absolute;
-			top: 58px;
-	    	left: 257px
+			top: 48px;
+	    	left: 1px
 		}
 		#search-content{
 			padding: 24px;
@@ -271,7 +272,7 @@
 		}
 		.input-sso{
 			display: inline-block;
-			width: 547px;
+			width: 77%;
 			float: right;
 			border: none;
 			border-bottom: 1px solid #ECEEF1;
@@ -290,12 +291,13 @@
 			display: flex;
 		}
 		.selects{
-			width: 234px;
+			width: 133px;
 	  		 margin-right: 20px;
 	   		border: none;
 	    	background: transparent;
 	    	border-bottom: 1px solid #ECEEF1;
 	    	outline: none;
+	    	cursor: pointer;
 		}
 		.op{
 			text-align: center;
@@ -312,6 +314,7 @@
 			background-color: transparent;
 			border-bottom: 1px solid #ECEEF1;
 			outline: none;
+			cursor: pointer;
 		}
 		.date-ip{
 			width: 280px;
@@ -331,7 +334,7 @@
 	}
 	.compose{
 		width: 134px;
-		height: 46px;
+		height: 52px;
 		display: inline-flex;
 		background-image: url('https://www.gstatic.com/images/icons/material/colored_icons/1x/create_32dp.png');
 		background-repeat: no-repeat;
@@ -345,17 +348,17 @@
 		font-family: 'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 		font-size: 14px;
     	display: block;
-    	line-height: 46px;
+    	line-height: 51px;
     	padding-left: 56px;
     	color: #5A4F49;
 	}
 	.compose:hover{
-		width: 56px;
-		height: 56px;
+		width: 52px;
+		height: 52px;
 		border-radius: 50%;
-		background-position: 11px;
+		background-position: 10px;
 	}
-	.compose:hover .compose-text,.compose-text:hover{
+	.compose:hover .compose-text{
 		display: none;
 	}
 	#mail-menu{
@@ -391,6 +394,7 @@
 	}
 	.con{
 		margin-top: 7px;
+		display: flex;
 	}
 	.count{
 		display: inline-block;
@@ -398,7 +402,6 @@
 		margin-left: 52px;
 	}
 	.drop{
-		display: none;
 		font-size: 15px;
 	}
 	.count1{
@@ -417,4 +420,50 @@
 		transform: rotate(134deg);
 		font-size: 21px;
 		color: #767676;
+	}
+	
+	.dpcon{
+		text-align:left;
+		height: 20px;
+		width: 443px;
+		border-bottom: 1px solid #eceef1;
+		cursor: pointer;
+	}
+	.dpbtn{
+		position: absolute;
+		top: 1px;
+		left: 434px;
+		background-color: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+	#dropdown-content{
+		position: absolute;
+		top: -8px;
+		left: -11px;
+		overflow-x:hidden;
+		max-height: 200px; 
+		background-color: #fff;
+		border: 1px solid transparent;
+		box-shadow: 0px 0px 6px 5px rgba(196,196,196,1);
+	}
+	#ulcontent{
+		text-decoration:none;
+		padding:0px;
+
+	}
+	.li-content{
+		width: 200px;
+		height: 35px;
+		text-align:left;
+		padding-left: 10px;
+		line-height: 30px;
+	}
+	.li-content:hover{
+		background-color: #F3F3F3;
+	}
+	.dpcon:hover{
+		background-color: #F1F3F4;
+		border-radius: 5px;
 	}

@@ -10,58 +10,39 @@
 <body>
 	<div id="page">
 		<div id="header" class="clearfix">
-		<div id="left" class="clearfix">
-			<div id="left-side">
-				
+			<div id="left" class="clearfix">
+				<div id="left-side">
 					<span class="humburger" id="tongle"></span>
-			
-			</div>
+				</div>
 			<div id="logo">
 				<a href="index.html">
 					<img class="gb_ua" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x.png" srcset="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x.png 1x, https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x.png 2x " alt="" aria-hidden="true" style="width:109px;height:40px;padding-top: 4px">
 				</a>
 			</div>
-	</div>
-	<div id="search-main" class="clearfix">
-			<div id="search" class="clearfix">
-				<div id="form1" class="clearfix">
-					<form class="clearfix" id="form">
-						<a href="#"class="search_btn" ><span class="span"  id="searchicon"><i class="fa fa-search"></i></span></a>
-						<div id="ip">
-							<input type="text" name="search" placeholder="Search mail" class="input" id="input">
-						</div>
-						<button  class="search1_btn"><span class="span1"  id="cross">
-							<i class="fa fa-times" style="display: none;" ></i>
-						</span></button>
-						<button  class="search_btn "><span class="span down" id="downaerrow"><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
-					</form>
-				</div>
+
+
+
+
+
+			<div id="search-main" class="clearfix">
+				<div id="search1" class="clearfix">
+					<a href="#"class="search_btn" id="search" ><i class="fa fa-search"></i></span></a>
+						<form class="clearfix" id="form">
+								<input type="text" name="search" placeholder="Search mail" class="input" id="input">
+						</form>
+						<a href="#" class="search1_btn">
+									<i class="fa fa-times" style="display: none;" ></i>
+								</a>
+						<a href="#" class="search_btn " id="moreoption"><i class="fa fa-caret-down" aria-hidden="true" id="mp"></i></a>
+							<div id="show-search-option" style="display: none;">
+		<div id="search-content">
+			<div class="sso">
+				<span class="span-sso">
+					<label>Form</label>
+				</span>
+				<input type="text" name="text" class="input-sso">
 			</div>
-		</div>
-	<div id="user-right" class="clearfix">
-		<div id="support">
-			<a href="#"><span class="span sp2" id="supporticon"><i class="fa fa-lg fa-question-circle-o"></i></span></a>
-		</div>
-		<div id="more-app" class="clearfix">
-			<a href="#" class="more clearfix">
-				<span class="s1"></span>
-				<span class="s2"></span>
-				<span class="s3"></span>
-			</a>
-			<a href="#" class="user">
-				<img src="imeage/avatR.png" style="width: 32px;height: 32px;" id="ud">
-			</a>
-		</div>
-	</div>
-	<div id="show-search-option" style="display: none;">
-	<div id="search-content">
-		<div class="sso">
-			<span class="span-sso">
-				<label>Form</label>
-			</span>
-			<input type="text" name="text" class="input-sso">
-		</div>
-		<div class="sso">
+			<div class="sso">
 			<span class="span-sso">
 				<label>To</label>
 			</span>
@@ -89,7 +70,7 @@
 			<span class="span-sso">
 				<label>Size</label>
 			</span>
-			<div class="select">
+			<div class="select" style="position: relative;">
 				<select class="selects">
 					<option class="op">greater then</option>
 					<option class="op">less than</option>
@@ -121,144 +102,63 @@
 				<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 			</div>
 		</div>
-	</div>
-</div>
-</div>
-	
-	<div id="second-half" class="clearfix">
-		<div id="left-path">
-			<div id="left-mebu-bar">
-				<div class="compose-box">
-					<a href="#" class="compose">
-						<span class="compose-text">Compose</span>
-					</a>
-				</div>
-			</div>
-			<div id="mail-menu">
-				<div class="menu">
-					<a href="#" class="img">
-						<img src="https://www.gstatic.com/images/icons/material/system/1x/inbox_gm_googlered600_20dp.png" >
-					</a>
-					<div class="con">
-						<span class="name">Inbox</span>
-							<span class="count">0</span>
-							<span class="drop">
-								<i class="fa fa-caret-down" aria-hidden="true"></i>
-							</span>
+		<div class="sso-select">
+			<span class="span-sso">
+				<label>Search</label>
+			</span>
+			<div class="select clearfix" style="position: relative;" id="dpcnt" > 
+				<div id="dropdown">
+					<div id="content" class="dpcon">
+						All Mail
 					</div>
-				</div>
-				<div class="menu">
-					<a href="#" class="img">
-						<img src="https://www.gstatic.com/images/icons/material/system/1x/grade_black_20dp.png" class="im">
-					</a>
-					<div class="con">
-						<span class="name">Starred</span>
-					</div>
-				</div>
-				<div class="menu">
-					<a href="#" class="img">
-						<img src="https://www.gstatic.com/images/icons/material/system/1x/watch_later_black_20dp.png" class="im">
-					</a>
-					<div class="con">
-						<span class="name">Sent</span>
-					</div>
-				</div>
-				<div class="menu">
-					<a href="#" class="img">
-						<img src="https://www.gstatic.com/images/icons/material/system/1x/insert_drive_file_black_20dp.png" class="im">
-					</a>
-					<div class="con" class="clearfix">
-						<span class="name">Drafts</span>
-							<span class="count1">0</span>
-					</div>
-				</div>
-				<div class="menu" id="moremenu">
-					<a href="#" class="img">
-						<img src="https://www.gstatic.com/images/icons/material/system/1x/expand_more_black_20dp.png" class="im">
-					</a>
-					
-					<div class="con">
-						<span class="name">More</span>
-					</div>
-				</div>
-				<div class="menu" style="display: none" id="lessbtn">
-					<a href="#" class="img">
-						<img src="https://www.gstatic.com/images/icons/material/system/1x/expand_less_black_20dp.png">
-					</a>
-					<div class="con">
-						<span class="name" style="">Less</span>
-					</div>
-				</div>
-				<div id="less" style="display: none;">
-					<div class="menu">
-						<a href="#" class="img">
-							<img src="https://www.gstatic.com/images/icons/material/	system/1x/label_important_black_20dp.png" class="im">
-						</a>
-					
-						<div class="con">
-							<span class="name">Important</span>
-						</div>
-					</div>
-					<div class="menu">
-						<a href="#" class="img">
-							<img src="https://www.gstatic.com/images/icons/material/system/1x/hangout_black_20dp.png" class="im">
-						</a>
-					
-						<div class="con">
-							<span class="name">Chats</span>
-						</div>
-					</div>
-					<div class="menu">
-						<a href="#" class="img">
-							<img src="https://www.gstatic.com/images/icons/material/system/1x/schedule_send_black_20dp.png" class="im">
-						</a>
-					
-						<div class="con">
-							<span class="name">Scheduled</span>
-						</div>
-					</div>
-					<div class="menu">
-						<a href="#" class="img">
-							<img src="https://www.gstatic.com/images/icons/material/system/1x/mail_black_20dp.png" class="im">
-						</a>
-					
-						<div class="con">
-							<span class="name">All Mail</span>
-						</div>
-					</div>
-					<div class="menu">
-						<a href="#" class="img">
-							<img src="https://www.gstatic.com/images/icons/material/system/1x/report_black_20dp.png" class="im">
-						</a>
-					
-						<div class="con">
-							<span class="name"><b style="color:#000">Spam</b></span>
-							<span class="count1">0</span>
-						</div>
-					</div>
-					<div class="menu">
-						<a href="#" class="img">
-							<img src="https://www.gstatic.com/images/icons/material/system/1x/delete_black_20dp.png" class="im">
-						</a>
-					
-						<div class="con">
-							<span class="name">Trash</span>
-						</div>
-					</div>
-					<div class="menu me">
-						<span class="mes"><i class="fa fa-caret-down" aria-hidden="true" style="opacity: 0.5"></i></span>
-						<a href="#" class="img">
-							<i class="fa fa-tag" aria-hidden="true"></i>
-						</a>
-					
-						<div class="con">
-							<span class="name">Catagories</span>
-						</div>
+					<button id="dpbut" class="dpbtn"><i class="fa fa-caret-down" aria-hidden="true" id="dpbutton"></i></button>
+					<div id="dropdown-content" style="display: none;">
+						<ul id="ulcontent">
+							<li class="li-content">All Mail</li>
+							<li class="li-content">Inbox</li>
+							<li class="li-content">Starred</li>
+							<li class="li-content">Sent Mail</li>
+							<li class="li-content">Drafts</li>
+							<li class="li-content">Chats</li>
+							<li class="li-content">Spam</li>
+							<li class="li-content">Trash</li>
+							<li class="li-content">Mail & Spam & Trash</li>
+							<li class="li-content">Read Mail</li>
+							<li class="li-content">Unread Mail</li>
+							<li class="li-content">Social</li>
+							<li class="li-content">Updates</li>
+							<li class="li-content">Forums</li>
+							<li class="li-content">promotions</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
+				</div>
+
+			</div>
+		</div>
+	<div id="user-right" class="clearfix">
+		<div id="support">
+			<a href="#" class="support"><i class="fa fa-m fa-question-circle-o"></i></a>
+		</div>
+		<div id="more-app" class="clearfix">
+			<a href="#" class="more clearfix">
+				<span class="s1"></span>
+				<span class="s2"></span>
+				<span class="s3"></span>
+			</a>
+		</div>
+		<div class="user">
+			<img src="imeage/avatR.png" style="width: 32px;height: 32px;" id="ud">
+		</div>
 	</div>
+
+</div>
+	
+	
+</div>
 </body>
 </html>

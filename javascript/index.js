@@ -47,19 +47,24 @@ document.getElementById("left-side").addEventListener("click",function(event){
 document.getElementById("page").addEventListener("click",find);
 function find(event){
 		console.log(event.target.id);
-		//console.log(event.target);
-		//console.log(event.target.class);
+		console.log(event.target);
+		console.log(event);
 		if (event.target.id === "input"){
 			document.getElementById("form").style.backgroundColor="#fff";
 			document.getElementById("input").style.backgroundColor="#fff";
-			document.getElementById("form").style.boxShadow="0px 1px 2.3px 0px rgba(104,106,112,1),1px 0px 2px 0px rgba(104,106,112,0)";
+			document.getElementById("search1").style.backgroundColor="#fff";
+			document.getElementById("search1").style.boxShadow="0px 1px 2.3px 0px rgba(104,106,112,1),1px 0px 2px 0px rgba(104,106,112,0)";
 		}
-		else if(event.target.id ==="downaerrow"){
+		else if((event.target.id ==="moreoption") || (event.target.id === "mp")){
 			document.getElementById("show-search-option").style.display="block";
 		}
 		else if((event.target.id === "tongle") || (event.target.id === "left-side")){
-			document.getElementById("mail-menu").style.display="none";
-			document.getElementById("mail-menu").children[0];
+			//document.getElementById("mail-menu").style.display="none";
+			//document.getElementsByClassName("con").style.display="none";
+			var d=document.getElementsByClassName("con");
+			for(var i=0;i<d.length;i++){
+				d[i].style.display="none";
+			}
 		}
 		else if(event.target.id === "moremenu"){
 				document.getElementById("moremenu").style.display="none";
@@ -71,6 +76,23 @@ function find(event){
 				document.getElementById("lessbtn").style.display="none";
 				document.getElementById("less").style.display="none";
 		}
+		else if(event.target.id === "content"){
+			document.getElementById("dropdown-content").style.display="block";
+			var data=document.getElementById("dropdown-content");
+			console.log(data.children[0]);
+			var parent=data.children[0];
+			console.log(parent.childElementCount);
+		}
+		else if(event.target.tagName ==="LI"){
+			console.log(event.target.innerText);
+			document.getElementById("content").innerHTML=event.target.innerText;
+			document.getElementById("dropdown-content").style.display="none";
+
+		}
+		else if(event.target.id === "second-half"){
+			document.getElementById("show-search-option").style.display="none";
+		}
+
 }
 
 }
