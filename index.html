@@ -24,83 +24,112 @@
 
 
 
-			<div id="search-main" class="clearfix">
-				<div id="search1" class="clearfix">
-					<a href="#"class="search_btn" id="search" ><i class="fa fa-search"></i></span></a>
-						<form class="clearfix" id="form">
-								<input type="text" name="search" placeholder="Search mail" class="input" id="input">
-						</form>
-						<a href="#" class="search1_btn">
-									<i class="fa fa-times" style="display: none;" ></i>
-								</a>
-						<a href="#" class="search_btn " id="moreoption"><i class="fa fa-caret-down" aria-hidden="true" id="mp"></i></a>
-							<div id="show-search-option" style="display: none;">
+<div id="search-main" class="clearfix">
+		<div id="search1" class="clearfix">
+			<a href="#"class="search_btn" id="search" >
+				<i class="fa fa-search"></i>
+			</a>
+				<form class="clearfix" id="form">
+					<input type="text" name="search" placeholder="Search mail" class="input" id="input">
+				</form>
+				<a href="#" class="search1_btn">
+					<i class="fa fa-times" style="display: none;" ></i>
+				</a>
+			<a href="#" class="search_btn " id="moreoption">
+				<i class="fa fa-caret-down" aria-hidden="true" id="mp"></i>
+			</a>
+		</div>
+	<div id="show-search-option" style="display: none;">
 		<div id="search-content">
 			<div class="sso">
 				<span class="span-sso">
-					<label>Form</label>
+					Form
 				</span>
 				<input type="text" name="text" class="input-sso">
 			</div>
 			<div class="sso">
 			<span class="span-sso">
-				<label>To</label>
+				To
 			</span>
 			<input type="text" name="text" class="input-sso">
 		</div>
 		<div class="sso">
 			<span class="span-sso">
-				<label>Subject</label>
+				Subject
 			</span>
 			<input type="text" name="text" class="input-sso">
 		</div>
 		<div class="sso">
 			<span class="span-sso">
-				<label>Has the words</label>
+				Has the words
 			</span>
 			<input type="text" name="text" class="input-sso">
 		</div>
 		<div class="sso">
 			<span class="span-sso">
-				<label>Doesn't have</label>
+				Doesn't have
 			</span>
 			<input type="text" name="text" class="input-sso">
 		</div>
-		<div class="sso-select">
+		<div class="sso-select" >
 			<span class="span-sso">
 				<label>Size</label>
 			</span>
-			<div class="select" style="position: relative;">
-				<select class="selects">
-					<option class="op">greater then</option>
-					<option class="op">less than</option>
-				</select>
+			<div class="select"  style="position: relative;" >
+				<div class="dp2">
+					<span class="view" id="vspan">
+						greater than
+					</span>
+					<button id="dpbut1" class="dpbtn1"><i class="fa fa-caret-down" aria-hidden="true" id="dpbutton1"></i></button>
+					<div class="elements" id="elements" style="display: none;">
+						<ul class="ul1" id="ul1element">
+							<li class="li1">greater than</li>
+							<li class="li1">less than</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 				<input type="text" name="empty" class="select-input">
-				<select class="selects-byte">
-					<option class="op">MB</option>
-					<option class="op">KB</option>
-					<option class="op">Bytes</option>
-				</select>
+			<div>
+				<div id="byte" style="position: relative;">
+					<span class="bytespan" id="bytespan">MB</span>
+					<button class="btn2" id="btn2">
+						<i class="fa fa-caret-down" aria-hidden="true" id="dpbutton2"></i>
+					</button>
+					<div id="byteelements" style="display: none;">
+						<ul id="byteele">
+							<li class="li2">MB</li>
+							<li class="li2">KB</li>
+							<li class="li2">Bytes</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="sso-select">
 			<span class="span-sso">
 				<label>Date within</label>
 			</span>
-			<div class="select">
-				<select class="selects">
-					<option class="op">1 day</option>
-					<option class="op">3 days</option>
-					<option class="op">1 week</option>
-					<option class="op">2 weeks</option>
-					<option class="op">1 month</option>
-					<option class="op">2 months</option>
-					<option class="op">6 months</option>
-					<option class="op">1 year</option>
-				</select>
-				<input type="text" name="date" class="date-ip">
-				<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-			</div>
+			 	<div id="days" style="position: relative;">
+			 		<span class="days" id="days-span">1 day</span>
+			 		<button class="btn3">
+			 			<i class="fa fa-caret-down" aria-hidden="true" id="dpbutton3"></i>
+			 		</button>
+			 		<div id="days-content" style="display: none;">
+			 			<ul id="daysul">
+			 				<li class="lidays">1 day</li>
+			 				<li class="lidays">3 days</li>
+			 				<li class="lidays">1 week</li>
+			 				<li class="lidays">2 weeks</li>
+			 				<li class="lidays">1 month</li>
+			 				<li class="lidays">2 months</li>
+			 				<li class="lidays">6 months</li>
+			 				<li class="lidays">1 year</li>
+			 			</ul>
+			 		</div>
+			 	</div>
+			<input type="text" name="date" class="date-ip">
+			<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 		</div>
 		<div class="sso-select">
 			<span class="span-sso">
@@ -136,10 +165,9 @@
 		</div>
 	</div>
 </div>
-				</div>
 
-			</div>
-		</div>
+</div>
+</div>
 	<div id="user-right" class="clearfix">
 		<div id="support">
 			<a href="#" class="support"><i class="fa fa-m fa-question-circle-o"></i></a>

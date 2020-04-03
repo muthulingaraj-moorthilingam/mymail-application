@@ -11,6 +11,9 @@ fetch("https://api.myjson.com/bins/uw598")
 	value=data;
 	console.log(value);
 });
+
+
+var arr=["Form","To","Subject","Has the words","Doesn't have"];
 /*
 fetch("https://api.myjson.com/bins/11ut94")
 .then(function(value){
@@ -46,19 +49,53 @@ document.getElementById("left-side").addEventListener("click",function(event){
 
 document.getElementById("page").addEventListener("click",find);
 function find(event){
-		console.log(event.target.id);
-		console.log(event.target);
-		console.log(event);
+		//console.log(event.target.id);
+		//console.log(event.target);
+		//console.log(event);
 		if (event.target.id === "input"){
 			document.getElementById("form").style.backgroundColor="#fff";
 			document.getElementById("input").style.backgroundColor="#fff";
 			document.getElementById("search1").style.backgroundColor="#fff";
 			document.getElementById("search1").style.boxShadow="0px 1px 2.3px 0px rgba(104,106,112,1),1px 0px 2px 0px rgba(104,106,112,0)";
 		}
-		else if((event.target.id ==="moreoption") || (event.target.id === "mp")){
+		else if(event.target.id === "search1"){
+				document.getElementById("show-search-option").style.display="none";
+				document.getElementById("moreoption").style.display="inline-block";
+			}
+			if((event.target.id ==="moreoption") || (event.target.id === "mp")){
 			document.getElementById("show-search-option").style.display="block";
+			document.getElementById("moreoption").style.display="none";
 		}
-		else if((event.target.id === "tongle") || (event.target.id === "left-side")){
+		else if(event.target.tagName === "INPUT"){
+			var parent=event.target.parentNode;
+			//console.log(parent.length);
+			if((parent.className === "sso") || (parent.className === "sso-select")){
+				/*var da=event.target.previousElementSibling.innerText;
+				for(var i=0;i<arr.length;i++){
+					if(arr[i] === da){
+						event.target.style.borderBottom="1px solid #1A73E8";
+					}
+
+				}*/
+				var grand_parent=parent.parentNode;
+				for(var i=0;i<grand_parent.childElementCount;i++){
+					var temp=grand_parent.children[i];
+						for(var j=0;j<temp.childElementCount;j++){
+							if(temp.children[j] === event.target){
+								//continue;
+								event.target.style.borderBottom="1px solid #1A73E8";
+							}
+							else{
+								if(temp.children[j].tagName === "INPUT"){
+									temp.children[j].style.borderBottom="1px solid #ECEEF1";
+								}
+							}
+						}
+				}
+			}
+			
+		}
+		/*else if((event.target.id === "tongle") || (event.target.id === "left-side")){
 			//document.getElementById("mail-menu").style.display="none";
 			//document.getElementsByClassName("con").style.display="none";
 			var d=document.getElementsByClassName("con");
@@ -75,23 +112,47 @@ function find(event){
 				document.getElementById("moremenu").style.display="flex";
 				document.getElementById("lessbtn").style.display="none";
 				document.getElementById("less").style.display="none";
-		}
-		else if(event.target.id === "content"){
+		}*/
+		else if((event.target.id === "content") || (event.target.id === "dpbutton")){
 			document.getElementById("dropdown-content").style.display="block";
 			var data=document.getElementById("dropdown-content");
 			console.log(data.children[0]);
 			var parent=data.children[0];
 			console.log(parent.childElementCount);
+			document.getElementById("elements").style.display="none";
+				document.getElementById("byteelements").style.display="none";
+		}
+		else if((event.target.className === "view")|| (event.target.id === "dpbutton1")){
+			document.getElementById("elements").style.display="block";
+			document.getElementById("byteelements").style.display="none";
+				document.getElementById("dropdown-content").style.display="none";
+		}
+		else if((event.target.className === "bytespan")|| (event.target.id === "dpbutton2")){
+			document.getElementById("byteelements").style.display="block";
+			document.getElementById("elements").style.display="none";
+					document.getElementById("dropdown-content").style.display="none";
 		}
 		else if(event.target.tagName ==="LI"){
-			console.log(event.target.innerText);
+			if(event.target.parentNode.id ==="ulcontent"){
+				console.log(event.target.innerText);
+				
 			document.getElementById("content").innerHTML=event.target.innerText;
 			document.getElementById("dropdown-content").style.display="none";
 
+
+			}
+			else if(event.target.parentNode.id==="ul1element"){
+				
+					document.getElementById("vspan").innerHTML=event.target.innerText;
+					document.getElementById("elements").style.display="none";
+				}
+				else if (event.target.parentNode.id === "byteele"){
+					document.getElementById("bytespan").innerHTML=event.target.innerText;
+					document.getElementById("byteelements").style.display="none";
+					
+				}
 		}
-		else if(event.target.id === "second-half"){
-			document.getElementById("show-search-option").style.display="none";
-		}
+		
 
 }
 
