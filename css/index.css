@@ -269,8 +269,7 @@
 			margin-right: 32px;
 			min-width: 88px;
 			line-height: 20px;
-			font-size: 14px;
-			font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+			font:14px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 		}
 		.input-sso{
 			display: inline-block;
@@ -317,7 +316,7 @@
 			cursor: pointer;
 		}
 		.date-ip{
-			width: 280px;
+			width: 400px;
 			display: inline-block;
 			border: none;
 			outline: none;
@@ -432,6 +431,9 @@
 		padding-left: 3px;
 		color: #202124;
 	}
+	.elements{
+		z-index: 1;
+	}
 	.dpbtn{
 		position: absolute;
 		top: 5px;
@@ -471,11 +473,12 @@
 	.dpcon:hover{
 		background-color: #F1F3F4;
 		border-radius: 5px;
+		border:none;
 	}
 	.view{
 		display: inline-block;
 		width: 233px;
-		line-height: 18px;
+		line-height: 20px;
 		color: #202124;
 		border-bottom: 1px solid #eceef1;
     	padding-left: 3px;
@@ -491,7 +494,10 @@
     	cursor: pointer;
     	outline: none;
 	}
-	.dp2:hover,.byte:hover,.bytespan:hover{
+	#byteelements{
+		z-index: 1;
+	}
+	.byte:hover,.bytespan:hover{
 		background-color: #F1F3F4;
 		border-radius: 5px;
 	}
@@ -589,4 +595,13 @@
 	}
 .li1:hover,.lidays:hover{
 		background-color: #dce1e3
+	}
+	/*.input-sso:focus{
+		border-bottom: 1px solid red;
+	}*/
+	.view:hover{
+		border-bottom: none;
+		border-radius:5px;
+		height: 23px;
+		background-color:#f2f2f2;
 	}
